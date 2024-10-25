@@ -6,7 +6,6 @@ var rl = readline.createInterface({
 
 
   terminal: false }); 
-  
 
   console.log("absc");
   
