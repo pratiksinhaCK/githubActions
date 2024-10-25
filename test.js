@@ -10,8 +10,6 @@ var rl = readline.createInterface({
   console.log("absc");
   
 
-   
-  console.log("absc");
 
 
 
