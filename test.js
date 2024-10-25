@@ -10,10 +10,10 @@ var rl = readline.createInterface({
   console.log("absc");
   
    
-
+  console.log("absc");
     
 
-  
+
 
   rl.on('line', function(line){
         console.log("Hello, " + line);
