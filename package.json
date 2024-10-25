@@ -1,5 +1,6 @@
 {
-    "scripts": {
-      "eslint:github-action": "eslint src/"
-    }
+  "scripts": {
+    "eslint:github-action": "eslint src/"
   }
+}
+
