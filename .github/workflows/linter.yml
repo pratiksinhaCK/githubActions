@@ -7,25 +7,22 @@ on:
 
 
 jobs:
-  lint:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Use Node.js version 14 or higher for modern syntax
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run ESLint
-        run: npx eslint .
-          
+          node-version: '16'
+      - name: install
+        run: yarn install
+      - name: ESLint
+        run: yarn run fix .
+      - name: Prettier
+        run: yarn prettier --write .
           
 
 
