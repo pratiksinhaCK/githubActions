@@ -4,9 +4,11 @@ var rl = readline.createInterface({
   output: process.stdout,
 
 
-  
+
   terminal: false }); 
   
+
+  console.log("absc");
   
   rl.on('line', function(line){
         console.log("Hello, " + line);
