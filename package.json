@@ -8,8 +8,7 @@
         "fix": "yarn format && yarn lint:fix",
         "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
         "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-        "fix:eslint": "eslint src --ext .js,.ts,.jsx,.tsx --fix",
-        "fix:prettier": "prettier --write ."
+        "fix:eslint": "eslint src --ext .js,.ts,.jsx,.tsx --fix"
       },
     "devDependencies": {
         "@eslint/js": "^9.13.0",
