@@ -1,4 +1,6 @@
 console.log("hi fi");
 
-    onsole.log("fifi");
+    console.log("fifi");
         var a;
+        a = 5;
+        console.log(a);
