@@ -1,0 +1,14 @@
+name: Enforce Draft Pull Requests
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  enforce-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Convert to Draft
+        uses: peter-evans/pull-request-draft@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
